@@ -4,9 +4,10 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList'
 import Details from './components/Details';
-import Cart from './components/Cart';
+import Cart from './components/cart';
 import Default from './components/Default';
 import Store from './components/Store';
+import Modal from './components/Modal'
 import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/store' component={Store}/>
       <Route component={Default}/>
     </Switch>
+    <Modal/>
    </React.Fragment>
   );
 }
